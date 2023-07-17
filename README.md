@@ -1,7 +1,7 @@
 ## Project Seminar RIS | Technical University of Darmstadt 
-Gruppe 8:
+Bearbeitet von Gruppe 8:
 - Daniele Inturri
-- Leon Ross
+- Leon Roß
 - Patrick Schum
 - Yusuf Suvari
   
