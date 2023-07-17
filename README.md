@@ -21,7 +21,7 @@ source ~/.bashrc
 ```
 - In **src** folder clone the project repository:
 ```bash 
-git clone https://github.com/dansge7/Ps-Robotik.git
+[git clone https://github.com/dansge7/Ps-Robotik.git](https://github.com/SUVARI112/PS_Simulation.git)
 ```
 - run ``` catkin build ```
 - run  ``` source  {the_absolute_path_to_catkin_workspace}/catkin_ws/devel/setup.bash" >> ~/.bashrc ```
