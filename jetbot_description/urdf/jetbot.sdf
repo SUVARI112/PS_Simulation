@@ -1,0 +1,1059 @@
+<sdf version='1.6'>
+  <model name='jetbot'>
+    <link name='base_footprint'>
+      <pose frame=''>0 0 0 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0.018503 -0 0.02339 0 -0 0</pose>
+        <mass>1.75448</mass>
+        <inertia>
+          <ixx>0.0854841</ixx>
+          <ixy>-1.2839e-19</ixy>
+          <ixz>3.57813e-05</ixz>
+          <iyy>0.0820202</iyy>
+          <iyz>-1.62302e-19</iyz>
+          <izz>0.085716</izz>
+        </inertia>
+      </inertial>
+      <collision name='base_footprint_fixed_joint_lump__base_link_collision'>
+        <pose frame=''>0 0 0.013 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.134 0.095 0.035</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__back_caster_base_collision_1'>
+        <pose frame=''>-0.06 0 -0.0097 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.01</length>
+            <radius>0.0075</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__back_caster_collision_2'>
+        <pose frame=''>-0.06 0 -0.0137 0 -0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.005</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.01</mu>
+              <mu2>0.01</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__back_caster_lt_cyl_collision_3'>
+        <pose frame=''>-0.06 0.008 -0.0097 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.01</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__back_caster_rt_cyl_collision_4'>
+        <pose frame=''>-0.06 -0.008 -0.0097 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.01</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__front_caster_base_collision_5'>
+        <pose frame=''>0.06 0 -0.0097 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.01</length>
+            <radius>0.0075</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__front_caster_collision_6'>
+        <pose frame=''>0.06 0 -0.0137 0 -0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.005</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>0.01</mu>
+              <mu2>0.01</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__front_caster_lt_cyl_collision_7'>
+        <pose frame=''>0.06 0.008 -0.0097 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.01</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__front_caster_rt_cyl_collision_8'>
+        <pose frame=''>0.06 -0.008 -0.0097 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.01</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__lt_antenna_collision_9'>
+        <pose frame=''>-0.062 0.0425 0.1255 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.19</length>
+            <radius>0.005</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__lt_antenna_top_collision_10'>
+        <pose frame=''>-0.062 0.0425 0.2205 0 -0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.005</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__lt_wheel_shaft_collision_11'>
+        <pose frame=''>0.023 0.048 0.013 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.015</length>
+            <radius>0.005</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__lt_wheelc_collision_12'>
+        <pose frame=''>0.023 0.06 0.013 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.015</length>
+            <radius>0.026</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__pcb_boards_collision_13'>
+        <pose frame=''>0 0 0.055 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.105 0.08 0.055</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__rt_antenna_collision_14'>
+        <pose frame=''>-0.062 -0.0425 0.1255 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.19</length>
+            <radius>0.005</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__rt_antenna_top_collision_15'>
+        <pose frame=''>-0.062 -0.0425 0.2205 0 -0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.005</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__rt_wheel_shaft_collision_16'>
+        <pose frame=''>0.023 -0.048 0.013 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.015</length>
+            <radius>0.005</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__rt_wheelc_collision_17'>
+        <pose frame=''>0.023 -0.06 0.013 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.015</length>
+            <radius>0.026</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__camera_mount_base_collision_18'>
+        <pose frame=''>0.0615 0 0.0315 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.04 0.002</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__camera_mount_over_collision_19'>
+        <pose frame=''>0.0655 0 0.0475 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.03 0.04 0.002</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__camera_mount_angled_collision_20'>
+        <pose frame=''>0.0685 0 0.0745 3.14159 1.3308 3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.025 0.025 0.002</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__camera_screen_base_collision_21'>
+        <pose frame=''>0.070928 0 0.073906 3.14159 1.3308 3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.025 0.025 0.004</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__camera_pcb_base_collision_22'>
+        <pose frame=''>0.073357 0 0.073312 3.14159 1.3308 3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.013 0.013 0.004</size>
+          </box>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__camera_lens_body_collision_23'>
+        <pose frame=''>0.080156 0 0.071648 3.14159 1.3308 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.01</length>
+            <radius>0.006</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__camera_lens_body_out_collision_24'>
+        <pose frame=''>0.085013 0 0.070459 3.14159 1.3308 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.003</length>
+            <radius>0.0075</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <collision name='base_footprint_fixed_joint_lump__camera_lens_collision_25'>
+        <pose frame=''>0.084041 0 0.070697 3.14159 1.3308 3.14159</pose>
+        <geometry>
+          <sphere>
+            <radius>0.005</radius>
+          </sphere>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode/>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='base_footprint_fixed_joint_lump__base_link_visual'>
+        <pose frame=''>0 0 0.013 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.134 0.095 0.035</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/BlueTransparent</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__back_caster_base_visual_1'>
+        <pose frame=''>-0.06 0 -0.0097 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.01</length>
+            <radius>0.0075</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__back_caster_visual_2'>
+        <pose frame=''>-0.06 0 -0.0137 0 -0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.005</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__back_caster_lt_cyl_visual_3'>
+        <pose frame=''>-0.06 0.008 -0.0097 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.01</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__back_caster_rt_cyl_visual_4'>
+        <pose frame=''>-0.06 -0.008 -0.0097 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.01</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__front_caster_base_visual_5'>
+        <pose frame=''>0.06 0 -0.0097 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.01</length>
+            <radius>0.0075</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__front_caster_visual_6'>
+        <pose frame=''>0.06 0 -0.0137 0 -0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.005</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Grey</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__front_caster_lt_cyl_visual_7'>
+        <pose frame=''>0.06 0.008 -0.0097 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.01</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__front_caster_rt_cyl_visual_8'>
+        <pose frame=''>0.06 -0.008 -0.0097 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.01</length>
+            <radius>0.002</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__lt_antenna_visual_9'>
+        <pose frame=''>-0.062 0.0425 0.1255 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.19</length>
+            <radius>0.005</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__lt_antenna_top_visual_10'>
+        <pose frame=''>-0.062 0.0425 0.2205 0 -0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.005</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__lt_wheel_shaft_visual_11'>
+        <pose frame=''>0.023 0.048 0.013 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.015</length>
+            <radius>0.005</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__lt_wheelc_visual_12'>
+        <pose frame=''>0.023 0.06 0.013 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.015</length>
+            <radius>0.026</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__pcb_boards_visual_13'>
+        <pose frame=''>0 0 0.055 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.105 0.08 0.055</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/GreenTransparent</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__rt_antenna_visual_14'>
+        <pose frame=''>-0.062 -0.0425 0.1255 0 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.19</length>
+            <radius>0.005</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__rt_antenna_top_visual_15'>
+        <pose frame=''>-0.062 -0.0425 0.2205 0 -0 0</pose>
+        <geometry>
+          <sphere>
+            <radius>0.005</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__rt_wheel_shaft_visual_16'>
+        <pose frame=''>0.023 -0.048 0.013 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.015</length>
+            <radius>0.005</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__rt_wheelc_visual_17'>
+        <pose frame=''>0.023 -0.06 0.013 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.015</length>
+            <radius>0.026</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/White</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__camera_mount_base_visual_18'>
+        <pose frame=''>0.0615 0 0.0315 0 -0 0</pose>
+        <geometry>
+          <box>
+            <size>0.01 0.04 0.002</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/BlueTransparent</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__camera_mount_over_visual_19'>
+        <pose frame=''>0.0655 0 0.0475 3.14159 1.57079 3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.03 0.04 0.002</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/BlueTransparent</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__camera_mount_angled_visual_20'>
+        <pose frame=''>0.0685 0 0.0745 3.14159 1.3308 3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.025 0.025 0.002</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/BlueTransparent</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__camera_screen_base_visual_21'>
+        <pose frame=''>0.070928 0 0.073906 3.14159 1.3308 3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.025 0.025 0.004</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/SkyBlue</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__camera_pcb_base_visual_22'>
+        <pose frame=''>0.073357 0 0.073312 3.14159 1.3308 3.14159</pose>
+        <geometry>
+          <box>
+            <size>0.013 0.013 0.004</size>
+          </box>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__camera_lens_body_visual_23'>
+        <pose frame=''>0.080156 0 0.071648 3.14159 1.3308 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.01</length>
+            <radius>0.006</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__camera_lens_body_out_visual_24'>
+        <pose frame=''>0.085013 0 0.070459 3.14159 1.3308 3.14159</pose>
+        <geometry>
+          <cylinder>
+            <length>0.003</length>
+            <radius>0.0075</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <visual name='base_footprint_fixed_joint_lump__camera_lens_visual_25'>
+        <pose frame=''>0.084041 0 0.070697 3.14159 1.3308 3.14159</pose>
+        <geometry>
+          <sphere>
+            <radius>0.005</radius>
+          </sphere>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/GreyTransparent</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <velocity_decay/>
+      <sensor name='camera' type='camera'>
+        <update_rate>30</update_rate>
+        <camera name='head'>
+          <horizontal_fov>1.39626</horizontal_fov>
+          <image>
+            <width>1280</width>
+            <height>720</height>
+            <format>R8G8B8</format>
+          </image>
+          <noise>
+            <type>gaussian</type>
+            <mean>0</mean>
+            <stddev>0.007</stddev>
+          </noise>
+          <clip>
+            <near>0.1</near>
+            <far>100</far>
+          </clip>
+
+          <lens>
+            <intrinsics>
+              <fx>785.85762</fx>
+              <fy>786.97327</fy>
+              <cx>690.66733</cx>
+              <cy>350.85049</cy>
+              <s>0</s>
+            </intrinsics>
+          </lens>
+        </camera>
+        <plugin name='camera_controller' filename='libgazebo_ros_camera.so'>
+          <alwaysOn>1</alwaysOn>
+          <updateRate>0.0</updateRate>
+          <cameraName>/jetbot_camera</cameraName>
+          <imageTopicName>image_raw</imageTopicName>
+          <cameraInfoTopicName>camera_info</cameraInfoTopicName>
+          <frameName>camera_lens</frameName>
+          <hackBaseline>0.07</hackBaseline>
+          <distortionK1>0.0</distortionK1>
+          <distortionK2>0.0</distortionK2>
+          <distortionK3>0.0</distortionK3>
+          <distortionT1>0.0</distortionT1>
+          <distortionT2>0.0</distortionT2>
+        </plugin>
+        <pose frame=''>0.084041 0 0.070697 0 0.24 0</pose>
+      </sensor>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <link name='lt_wheel'>
+      <pose frame=''>0.023 0.0599 0.013 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.6</mass>
+        <inertia>
+          <ixx>0.04</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.04</iyy>
+          <iyz>0</iyz>
+          <izz>0.04</izz>
+        </inertia>
+      </inertial>
+      <collision name='lt_wheel_collision'>
+        <pose frame=''>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.015</length>
+            <radius>0.0325</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1.16</mu>
+              <mu2>1.16</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='lt_wheel_visual'>
+        <pose frame=''>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.015</length>
+            <radius>0.0325</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <joint name='lt_wheel_joint' type='revolute'>
+      <child>lt_wheel</child>
+      <parent>base_footprint</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <link name='rt_wheel'>
+      <pose frame=''>0.023 -0.0599 0.013 0 -0 0</pose>
+      <inertial>
+        <pose frame=''>0 0 0 0 -0 0</pose>
+        <mass>0.6</mass>
+        <inertia>
+          <ixx>0.04</ixx>
+          <ixy>0</ixy>
+          <ixz>0</ixz>
+          <iyy>0.04</iyy>
+          <iyz>0</iyz>
+          <izz>0.04</izz>
+        </inertia>
+      </inertial>
+      <collision name='rt_wheel_collision'>
+        <pose frame=''>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.015</length>
+            <radius>0.0325</radius>
+          </cylinder>
+        </geometry>
+        <surface>
+          <contact>
+            <ode/>
+          </contact>
+          <friction>
+            <ode>
+              <mu>1.16</mu>
+              <mu2>1.16</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+      <visual name='rt_wheel_visual'>
+        <pose frame=''>0 0 0 1.5708 -0 0</pose>
+        <geometry>
+          <cylinder>
+            <length>0.015</length>
+            <radius>0.0325</radius>
+          </cylinder>
+        </geometry>
+        <material>
+          <script>
+            <name>Gazebo/Black</name>
+            <uri>file://media/materials/scripts/gazebo.material</uri>
+          </script>
+        </material>
+      </visual>
+      <gravity>1</gravity>
+      <velocity_decay/>
+    </link>
+    <joint name='rt_wheel_joint' type='revolute'>
+      <child>rt_wheel</child>
+      <parent>base_footprint</parent>
+      <axis>
+        <xyz>0 1 0</xyz>
+        <limit>
+          <lower>-1e+16</lower>
+          <upper>1e+16</upper>
+        </limit>
+        <dynamics>
+          <spring_reference>0</spring_reference>
+          <spring_stiffness>0</spring_stiffness>
+        </dynamics>
+        <use_parent_model_frame>1</use_parent_model_frame>
+      </axis>
+    </joint>
+    <plugin name='gazebo_ros_control' filename='libgazebo_ros_control.so'>
+      <robotNamespace>/</robotNamespace>
+    </plugin>
+    <static>0</static>
+    <plugin name='p3d_base_controller' filename='libgazebo_ros_p3d.so'>
+      <rpyOffsets>0 0 0</rpyOffsets>
+      <xyzOffsets>0 0 0</xyzOffsets>
+      <frameName>base_footprint</frameName>
+      <gaussianNoise>0.01</gaussianNoise>
+      <topicName>gazebo_robot_pose</topicName>
+      <updateRate>50.0</updateRate>
+      <alwaysOn>1</alwaysOn>
+      <bodyName>base_footprint</bodyName>
+      <xyzOffset>0 0 0</xyzOffset>
+      <rpyOffset>0 -0 0</rpyOffset>
+    </plugin>
+  </model>
+</sdf>
