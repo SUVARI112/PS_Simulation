@@ -1,6 +1,10 @@
-## Project Seminar ris | Technical University of Darmstadt | Gruppe 8
-
-
+## Project Seminar RIS | Technical University of Darmstadt 
+Gruppe 8:
+- Daniele Inturri
+- Leon Ross
+- Patrick Schum
+- Yusuf Suvari
+  
 ### Before you get started with the simulation
 - Install 
   - **Ubuntu 18.04** (Dual boot is recommended)
