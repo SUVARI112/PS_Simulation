@@ -1,0 +1,253 @@
+<?xml version="1.0" ?>
+
+<sdf version="1.6">
+
+  <world name="ur3_cubes">
+    
+    <gui>
+      <camera name="user_camera">
+        <pose>1.4 -2.3 1.4 0.0 0.25 1.9</pose>
+      </camera>
+    </gui>
+
+    <gravity>0 0 -9.81</gravity>
+
+    <physics name="default_physics" default="0" type="ode">
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+
+    <scene>
+      <ambient>0.4 0.4 0.4 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>1</shadows>
+    </scene>
+
+    <!-- Light Source -->
+    <include>
+      <uri>model://sun</uri>
+    </include>
+
+    <!-- A ground plane -->
+    <include>
+      <uri>model://ground_plane</uri>
+      <pose>0 0 0 0 0 0</pose>
+    </include>
+
+    <light type="point" name="point">
+      <pose>0.7425 0.7425 2 0 0 0</pose>
+      <diffuse>1 1 1 1</diffuse>
+      <specular>.1 .1 .1 1</specular>
+      <attenuation>
+        <range>20</range>
+        <linear>0.2</linear>
+        <constant>0.8</constant>
+        <quadratic>0.01</quadratic>
+      </attenuation>
+      <cast_shadows>false</cast_shadows>
+    </light>
+
+
+
+
+    <!-- A gazebo links attacher -->
+    <!-- <plugin name="ros_link_attacher_plugin" -->
+    <!--         filename="libgazebo_ros_link_attacher.so"/> -->
+
+    <model name="base1">
+      <include >
+        <uri>model://base1</uri>
+        <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      </include>
+    </model>
+
+    <model name="base4">
+      <include >
+        <uri>model://base4</uri>
+        <pose>0.6395 0.0 0.0 0.0 0.0 0.0</pose>
+      </include>
+    </model>
+
+
+    <model name="base2">
+      <include >
+        <uri>model://base2</uri>
+        <pose>1.279 0.0 0.0 0.0 0.0 0.0</pose>
+      </include>
+    </model>
+
+    <model name="base3">
+      <include >
+        <uri>model://base3</uri>
+        <pose>1.279 0.6395 0.0 0.0 0.0 0.0</pose>
+      </include>
+    </model>
+
+
+    <model name="base6">
+      <include >
+        <uri>model://base6</uri>
+        <pose>0.0 0.6395 0.0 0.0 0.0 0.0</pose>
+      </include>
+    </model>
+
+    <model name="base7">
+      <include >
+        <uri>model://base7</uri>
+        <pose>0.0 1.279 0.0 0.0 0.0 0.0</pose>
+      </include>
+    </model>
+
+    <model name="base5">
+      <include >
+        <uri>model://base5</uri>
+        <pose>0.6395 1.279 0.0 0.0 0.0 0.0</pose>
+      </include>
+    </model>
+     
+    <model name="block1">
+      <include >
+        <uri>model://block1</uri>
+        <pose>0.0 0.0 0.0 0.0 0.0 0.0</pose>
+      </include>
+    </model>
+
+    <model name="block2">
+      <include >
+        <uri>model://block2</uri>
+        <pose>0.298 0.0 0.0 0.0 0.0 0.0</pose>
+      </include>
+    </model>
+
+    <model name="block3">
+      <include >
+        <uri>model://block3</uri>
+        <pose>0.596 0.0 0.0 0.0 0.0 0.0</pose>
+      </include>
+    </model>
+
+
+    <model name="block4">
+      <include >
+        <uri>model://block4</uri>
+        <pose>0.894 0.0 0.0 0.0 0.0 0.0</pose>
+      </include>
+    </model>
+
+    <model name="block5">
+      <include >
+        <uri>model://block5</uri>
+        <pose>1.192 0.0 0.0 0.0 0.0 0.0</pose>
+      </include>
+    </model>
+
+    <model name="block6">
+      <include >
+        <uri>model://block6</uri>
+        <pose>1.491 0.00 0.0 0.0 0.0 1.57</pose>
+      </include>
+    </model>
+
+    <model name="block7">
+      <include >
+        <uri>model://block7</uri>
+        <pose>1.491 0.298 0.0 0.0 0.0 1.57</pose>
+      </include>
+    </model>
+
+    <model name="block8">
+      <include >
+        <uri>model://block8</uri>
+        <pose>1.491 0.596 0.0 0.0 0.0 1.57</pose>
+      </include>
+    </model>
+
+    <model name="block9">
+      <include >
+        <uri>model://block9</uri>
+        <pose>1.491 0.894 0.0 0.0 0.0 1.57</pose>
+      </include>
+    </model>
+
+    <model name="block10">
+      <include >
+        <uri>model://block10</uri>
+        <pose>1.491 1.192 0.0 0.0 0.0 1.57</pose>
+      </include>
+    </model>
+
+    <model name="block11">
+      <include >
+        <uri>model://block11</uri>
+        <pose>1.491 1.490 0.0 0.0 0.0 3.14</pose>
+      </include>
+    </model>
+
+    <model name="block12">
+      <include >
+        <uri>model://block12</uri>
+        <pose>1.192 1.490 0.0 0.0 0.0 3.14</pose>
+      </include>
+    </model>
+
+
+    <model name="block13">
+      <include >
+        <uri>model://block13</uri>
+        <pose>0.894 1.490 0.0 0.0 0.0 3.14</pose>
+      </include>
+    </model>
+
+    <model name="block14">
+      <include >
+        <uri>model://block14</uri>
+        <pose>0.596 1.490 0.0 0.0 0.0 3.14</pose>
+      </include>
+    </model>
+
+    <model name="block15">
+      <include >
+        <uri>model://block15</uri>
+        <pose>0.298 1.490 0.0 0.0 0.0 3.14</pose>
+      </include>
+    </model>
+
+    <model name="block16">
+      <include >
+        <uri>model://block16</uri>
+        <pose>0.00 1.490 0.0 0.0 0.0 4.712</pose>
+      </include>
+    </model>
+
+    <model name="block17">
+      <include >
+        <uri>model://block17</uri>
+        <pose>0.00 1.192 0.0 0.0 0.0 4.712</pose>
+      </include>
+    </model>
+
+    <model name="block18">
+      <include >
+        <uri>model://block18</uri>
+        <pose>0.00 0.894 0.0 0.0 0.0 4.712</pose>
+      </include>
+    </model>
+
+    <model name="block19">
+      <include >
+        <uri>model://block19</uri>
+        <pose>0.00 0.596 0.0 0.0 0.0 4.712</pose>
+      </include>
+    </model>
+
+    <model name="block20">
+      <include >
+        <uri>model://block20</uri>
+        <pose>0.00 0.298 0.0 0.0 0.0 4.712</pose>
+      </include>
+    </model>
+
+
+  </world>
+</sdf>

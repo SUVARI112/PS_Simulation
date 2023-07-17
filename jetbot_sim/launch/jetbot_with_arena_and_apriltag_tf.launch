@@ -1,0 +1,35 @@
+    
+<launch>   
+    
+    <include file="$(find jetbot_sim)/launch/jetbot_gazebo.launch">
+    </include>
+
+    <!-- <node name="robot_tf_publisher" pkg="jetbot_sim" type="roboter_tf.py"
+    respawn="false"
+    output="screen" /> -->
+
+
+    <arg name="launch_prefix" default="" />
+    <arg name="queue_size" default="1" />
+
+    <!-- apriltag_ros continuous detection node -->
+    <node pkg="apriltag_ros" type="apriltag_ros_continuous_node" name="apriltag_ros_continuous_node" clear_params="true" output="screen" launch-prefix="$(arg launch_prefix)">
+        <!-- Remap topics from those used in code to those on the ROS network -->
+        <remap from="image_rect" to="/jetbot_camera/image_raw" />
+        <remap from="camera_info" to="/jetbot_camera/camera_info" />
+
+        <param name="publish_tag_detections_image" type="bool" value="true" /><!-- default: false -->
+        <param name="queue_size" type="int" value="$(arg queue_size)" />
+
+        <!-- load parameters (incl. tag family, tags, etc.) -->
+        <rosparam command="load" file="$(find jetbot_sim)/config/settings.yaml"/>
+        <rosparam command="load" file="$(find jetbot_sim)/config/tags.yaml"/>
+    </node>
+
+    <!-- <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher">
+        <remap from="tf_prefix" to="jetbot" />
+    </node> -->
+    <node name="rviz" pkg="rviz" type="rviz" args="-d $(find jetbot_sim)/config/config.rviz"/>
+
+
+</launch>

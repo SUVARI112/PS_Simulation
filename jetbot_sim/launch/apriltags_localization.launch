@@ -1,0 +1,18 @@
+<launch>  
+    <arg name="queue_size" default="1" />
+    <arg name="launch_prefix" default="" />
+    
+    <!-- apriltag_ros continuous detection node -->
+    <node pkg="apriltag_ros" type="apriltag_ros_continuous_node" name="apriltag_ros_continuous_node" clear_params="true" output="screen" launch-prefix="$(arg launch_prefix)">
+    <!-- Remap topics from those used in code to those on the ROS network -->
+    <remap from="image_rect" to="/jetbot_camera/image_raw" />
+    <remap from="camera_info" to="/jetbot_camera/camera_info" />
+
+    <param name="publish_tag_detections_image" type="bool" value="true" /><!-- default: false -->
+    <param name="queue_size" type="int" value="$(arg queue_size)" />
+
+    <!-- load parameters (incl. tag family, tags, etc.) -->
+    <rosparam command="load" file="$(find jetbot_sim)/config/settings.yaml"/>
+    <rosparam command="load" file="$(find jetbot_sim)/config/tags.yaml"/>
+    </node>
+</launch>
