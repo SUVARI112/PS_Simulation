@@ -1,0 +1,17 @@
+material Base/Image1
+{
+  technique
+  {
+    pass
+    {
+      ambient 1.0 1.0 1.0 1.0
+      diffuse 1.0 1.0 1.0 1.0
+      specular 0.0 0.0 0.0 1.0 0.5
+      texture_unit
+      {
+        texture Bases-3.png
+        filtering trilinear
+      }
+    }
+  }
+}
