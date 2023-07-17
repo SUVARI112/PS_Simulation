@@ -30,7 +30,7 @@ https://github.com/SUVARI112/PS_Simulation.git
 export GAZEBO_MODEL_PATH={the_absolute_path_to_catkin_workspace}/catkin_ws/src/jetbot_sim/models:$GAZEBO_MODEL_PATH
 ```
 
-- run ``` roslaunch jetbot_sim jetbot_with_arena_and_tf.launch ```
+- run ``` roslaunch jetbot_with_arena_and_apriltag_tf.launch ```
 
 the simulator (Gazebo) and Rviz should appear as follows:
 
